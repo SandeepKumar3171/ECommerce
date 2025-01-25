@@ -1,0 +1,6 @@
+.shouldActive:has(a.active) {
+  color: red !important;
+  background: #e3eff1;
+  border-radius: 7px;
+  border: 1px solid #e5e5e5;
+}
