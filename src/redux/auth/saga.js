@@ -21,6 +21,7 @@ export function* watchDealerSignUpResponse() {
   yield takeEvery(actions.SIGN_UP, dealerSignUpResponse)
 }
 function* loginResponse({ payload: { data } }) {
+  debugger
   try {
     const response = yield call(postLogin, '/user_login', data);
     if (response.response.Status) {
@@ -113,7 +114,7 @@ export default function* rootSaga() {
     fork(watchForgetPasswordResponse),
     fork(watchChangePasswordResponse),
     fork(watchGetUserDetailsResponse),
-     fork(watchUserDataByTokenResponse),
+    fork(watchUserDataByTokenResponse),
   ]);
 }
 

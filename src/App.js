@@ -53,11 +53,11 @@ function App() {
         <Routes>
           {/* <Route path="*" element={<NotFound />} /> */}
           {/* <Route path="/404" element={<NotFound />} /> */}
-          {/* <Route path="/sign-in" element={isAuthenticated() ? <Navigate to="/" /> : <Signin />} /> */}
+          <Route path="/sign-in" element={isAuthenticated() ? <Navigate to="/" /> : <Signin />} />
           {/* <Route path="/reset-password/*" element={isAuthenticated() ? <Navigate to="/" /> : <ResetPassword />} /> */}
 
           {/* For Test */}
-          <Route path="/" element={<Dashboard />} />
+          {/* <Route path="/" element={<Dashboard />} /> */}
           {/* End Test */}
 
           {/* <Route path="/" element={!isAuthenticated() ? <Navigate to="/sign-in" /> : <Layout />} >
